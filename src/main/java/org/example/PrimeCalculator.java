@@ -50,7 +50,7 @@ public class PrimeCalculator {
 
     // Antal primtal
     public void printCount() {
-        System.out.println("Hej, det finns " + countPrimes() + " primtal mellan " + lowerBound + " och " + upperBound + "!");
+        System.out.println("Det finns " + countPrimes() + " primtal mellan " + lowerBound + " och " + upperBound + "!");
     }
 
     // Summan av primtal

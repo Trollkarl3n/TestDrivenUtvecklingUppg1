@@ -17,9 +17,15 @@ class PrimeCalculatorTest {
         assertEquals(76127, calculator.sumPrimes());
     }
 
+    //@Test
+    //void testInvalidRange() {
+        //PrimeCalculator calculator = new PrimeCalculator(-10, 1500);
+        //assertThrows(IllegalArgumentException.class, calculator::validateRange);
+    //}
     @Test
     void testInvalidRange() {
-        PrimeCalculator calculator = new PrimeCalculator(-10, 1500);
-        assertThrows(IllegalArgumentException.class, calculator::validateRange);
+        assertThrows(IllegalArgumentException.class, () ->{
+           new PrimeCalculator(-10, 1500);
+        });
     }
 }
